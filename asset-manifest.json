@@ -1,15 +1,24 @@
 {
   "files": {
-    "main.css": "/static/css/main.e6c13ad2.css",
-    "main.js": "/static/js/main.615c9f4c.js",
-    "static/js/787.128fc6e9.chunk.js": "/static/js/787.128fc6e9.chunk.js",
+    "main.css": "/static/css/main.85fa33a7.css",
+    "main.js": "/static/js/main.a3a0d6f0.js",
+    "static/media/IternIneqry.png": "/static/media/IternIneqry.13430a0d76b8373b1684.png",
+    "static/media/SkinStore.png": "/static/media/SkinStore.51c23e31f1adbde5e6c8.png",
+    "static/media/Fitnesshub.png": "/static/media/Fitnesshub.d3ab31a293f384dfb52a.png",
+    "static/media/contact-image.jpeg": "/static/media/contact-image.37fcb61b49d6aa5c40d3.jpeg",
+    "static/media/AirGarage.png": "/static/media/AirGarage.c92afb65f1a3cf0f305e.png",
+    "static/media/person-3.png": "/static/media/person-3.5dd0b714cfc8d2673b79.png",
+    "static/media/person-2.png": "/static/media/person-2.6570129d3e8716b40235.png",
+    "static/media/person-1.png": "/static/media/person-1.fb6c3796b42f9ad950c7.png",
+    "static/media/brush.png": "/static/media/brush.85c9bab5ba2d7dcae1e3.png",
     "index.html": "/index.html",
-    "main.e6c13ad2.css.map": "/static/css/main.e6c13ad2.css.map",
-    "main.615c9f4c.js.map": "/static/js/main.615c9f4c.js.map",
-    "787.128fc6e9.chunk.js.map": "/static/js/787.128fc6e9.chunk.js.map"
+    "static/media/close-icon.svg": "/static/media/close-icon.36a1df96f812b5f4c12f817f90a904c6.svg",
+    "static/media/menu-icon.svg": "/static/media/menu-icon.9cbfc3090b4b0aec575128df8ede3633.svg",
+    "main.85fa33a7.css.map": "/static/css/main.85fa33a7.css.map",
+    "main.a3a0d6f0.js.map": "/static/js/main.a3a0d6f0.js.map"
   },
   "entrypoints": [
-    "static/css/main.e6c13ad2.css",
-    "static/js/main.615c9f4c.js"
+    "static/css/main.85fa33a7.css",
+    "static/js/main.a3a0d6f0.js"
   ]
 }
