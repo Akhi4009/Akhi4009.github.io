@@ -1,24 +1,29 @@
 {
   "files": {
-    "main.css": "/static/css/main.85fa33a7.css",
-    "main.js": "/static/js/main.a3a0d6f0.js",
+    "main.css": "/static/css/main.11fc1e95.css",
+    "main.js": "/static/js/main.1ef397ff.js",
     "static/media/IternIneqry.png": "/static/media/IternIneqry.13430a0d76b8373b1684.png",
     "static/media/SkinStore.png": "/static/media/SkinStore.51c23e31f1adbde5e6c8.png",
     "static/media/Fitnesshub.png": "/static/media/Fitnesshub.d3ab31a293f384dfb52a.png",
     "static/media/contact-image.jpeg": "/static/media/contact-image.37fcb61b49d6aa5c40d3.jpeg",
     "static/media/AirGarage.png": "/static/media/AirGarage.c92afb65f1a3cf0f305e.png",
+    "static/media/css.png": "/static/media/css.19c8605d6b2861f5fbe0.png",
     "static/media/person-3.png": "/static/media/person-3.5dd0b714cfc8d2673b79.png",
     "static/media/person-2.png": "/static/media/person-2.6570129d3e8716b40235.png",
     "static/media/person-1.png": "/static/media/person-1.fb6c3796b42f9ad950c7.png",
+    "static/media/javascript.png": "/static/media/javascript.130c0ecd57833da6f75c.png",
+    "static/media/React.png": "/static/media/React.ef28a7569ef18dd72579.png",
     "static/media/brush.png": "/static/media/brush.85c9bab5ba2d7dcae1e3.png",
+    "static/media/Node.png": "/static/media/Node.e71346fe0fec16ec5f6e.png",
+    "static/media/mongo.png": "/static/media/mongo.c964002ecef4971216d0.png",
     "index.html": "/index.html",
     "static/media/close-icon.svg": "/static/media/close-icon.36a1df96f812b5f4c12f817f90a904c6.svg",
     "static/media/menu-icon.svg": "/static/media/menu-icon.9cbfc3090b4b0aec575128df8ede3633.svg",
-    "main.85fa33a7.css.map": "/static/css/main.85fa33a7.css.map",
-    "main.a3a0d6f0.js.map": "/static/js/main.a3a0d6f0.js.map"
+    "main.11fc1e95.css.map": "/static/css/main.11fc1e95.css.map",
+    "main.1ef397ff.js.map": "/static/js/main.1ef397ff.js.map"
   },
   "entrypoints": [
-    "static/css/main.85fa33a7.css",
-    "static/js/main.a3a0d6f0.js"
+    "static/css/main.11fc1e95.css",
+    "static/js/main.1ef397ff.js"
   ]
 }
