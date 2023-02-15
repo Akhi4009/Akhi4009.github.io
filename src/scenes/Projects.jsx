@@ -3,9 +3,32 @@ import AirGarage from "../assets/AirGarage.png"
 import SkinStore from "../assets/SkinStore.png"
 import Fitnesshub from "../assets/Fitnesshub.png"
 import IternIneqry from "../assets/IternIneqry.png"
+import linkdin from "../assets/linkedin.png"
+import github from "../assets/github-mark-white.png"
 
 import LineGradient from "../components/LineGradient";
 import { motion } from "framer-motion";
+
+const obj={
+  airgarage: "This is the clone of AirGarage website which is a full service of parking operator.It helps us book parking slots across various places around the United States. This is a collaborative Team Project that we have completed in 4 days.",
+  skinstore: "This is the clone of SkinStore website which is a full service of cosmetic products.It helps us to buy cosmetic products across various places around the world. This is a solo Project that I have completed in 4 days.",
+  fitnesshub: "Fitnesshub is the most accurate, comprehensive nutrition tracking app. It is clone website of cronometer.com.This is a collaborative Team Project that we have completed in 4 days.",
+  intern:"This is a clone of website Interntheory.com. It provides oppertunity for students to get a good internship.This is a solo Project that I have completed in 4 days."
+}
+let gith={
+  airgarage:"https://github.com/fahad9988/naughty-wind-121",
+  skinstore:"https://github.com/Akhi4009/fortunate-fog-6612",
+  fitnesshub:"https://github.com/srinetanuj/FitnessHub",
+  intern:"https://github.com/Akhi4009/scrawny-meat-2282"
+}
+let livesite={
+  airgarage:"https://air-garage-clone.netlify.app/",
+  skinstore:"https://build-chi-five.vercel.app/",
+  fitnesshub:"https://projectfitnesshub.netlify.app/",
+  intern:"https://polite-platypus-d70ea6.netlify.app/"
+
+}
+ 
 
 const container = {
   hidden: {},
@@ -21,22 +44,44 @@ const projectVariant = {
   visible: { opacity: 1, scale: 1 },
 };
 
-const Project = ({ title,image }) => {
+const Project = ({ title,image,desc,tech,live,git }) => {
   const overlayStyles = `absolute h-full w-full opacity-0 hover:opacity-90 transition duration-500
-    bg-grey z-30 flex flex-col justify-center items-center text-center p-16 text-deep-blue`;
+    bg-grey z-40 flex flex-col justify-center items-center text-center p-10 text-deep-blue  `;
   const projectTitle = title.split(" ").join("-").toLowerCase();
 
   return (
     <motion.div variants={projectVariant} className="relative">
-      <div className={overlayStyles}>
+      <div className={overlayStyles} >
         <p className="text-2xl font-playfair">{title}</p>
-        <p className="mt-7">
-        This is the clone of AirGarage website which is a full service parking operator.
-         It helps us book parking slots across various places around the United States.
-         This is a collaborative Team Project that we have completed in 4 days.
-        </p>
+        <p className="mt-3">
+       {desc}
+        </p >
+        <p className=" text-xl font-playfair">Tech Used: {tech}</p>
+        <div className="flex justify-center md:justify-start mt-3 gap-5">
+        <button className="bg-red text-white p-2">
+        <a
+        className="hover:opacity-50 transition duration-500 text-lg "
+        href={live}
+        target="_blank"
+        rel="noreferrer"
+      >
+      live Site
+      </a>
+      </button>
+      <button className="bg-red text-white p-2">
+      <a
+        className="hover:opacity-50 transition duration-500"
+        href={git}
+        target="_blank"
+        rel="noreferrer"
+      >
+       Git Repo
+      </a>
+      </button>
       </div>
-      <img src={image} alt={projectTitle} />
+      </div>
+      <img src={image} alt={projectTitle} className="mb-10 p-5" />
+      
     </motion.div>
   );
 };
@@ -65,45 +110,32 @@ const Projects = () => {
           </div>
         </div>
         <p className="mt-10 mb-10">
-        This is the clone of AirGarage website which is a full service parking operator.
-         It helps us book parking slots across various places around the United States. 
-         This is a collaborative Team Project that we have completed in 4 days.
+        "This is the clone of AirGarage website which is a full service parking operator.It helps us book parking slots across various places around the United States. This is a collaborative Team Project that we have completed in 4 days."
         </p>
       </motion.div>
 
       {/* PROJECTS */}
       <div className="flex justify-center">
         <motion.div
-          className="sm:grid sm:grid-cols-3"
+          className="sm:grid  sm:grid-cols-2 gap-10"
           variants={container}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.2 }}
         >
           {/* ROW 1 */}
-          <div
-            className="flex justify-center text-center items-center p-10 bg-red
-              max-w-[400px] max-h-[400px] text-2xl font-playfair font-semibold"
-          >
-            BEAUTIFUL USER INTERFACES
-          </div>
-          <Project title="AirGarage" image={AirGarage} />
-          <Project title="Project 2" image={SkinStore} />
+         
+<Project title="AirGarage" git={gith['airgarage']} live={livesite['airgarage']} image={AirGarage} desc={obj['airgarage']} tech="HTML, CSS, JavaScript, Bootstrap." />
+<Project title="SkinStore" git={gith['skinstore']} live={livesite['skinstore']}  image={SkinStore} desc={obj['skinstore']} tech="HTML, CSS, JavaScript, ReactJS, ChakraUI."/>
 
           {/* ROW 2 */}
-          <Project title="Project 3" image={Fitnesshub} />
-          <Project title="Project 4" image={IternIneqry}/>
-          <Project title="Project 5" />
+<Project title="Fitnesshub" git={gith['fitnesshub']} live={livesite['fitnesshub']}  image={Fitnesshub} desc={obj['fitnesshub']}tech="HTML, CSS, JavaScript, ReactJS, ChakraUI." />
+<Project title="Inter Inqery" git={gith['intern']} live={livesite['intern']}  image={IternIneqry} desc={obj['intern']} tech="HTML, CSS, JavaScript, Bootstrap."/>
+         
 
           {/* ROW 3 */}
-          <Project title="Project 6" />
-          <Project title="Project 7" />
-          <div
-            className="flex justify-center text-center items-center p-10 bg-blue
-              max-w-[400px] max-h-[400px] text-2xl font-playfair font-semibold"
-          >
-            SMOOTH USER EXPERIENCE
-          </div>
+        
+         
         </motion.div>
       </div>
     </section>
