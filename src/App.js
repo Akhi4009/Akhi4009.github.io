@@ -6,6 +6,7 @@ import LineGradient from "./components/LineGradient";
 import Projects from "./scenes/Projects";
 import Contact from "./scenes/Contact";
 import Footer from "./scenes/Footer";
+import About from "./scenes/About";
 import useMediaQuery from "./hooks/useMediaQuery";
 import { useEffect, useState } from "react";
 import Testimonials from "./scenes/Testimonials";
@@ -49,8 +50,19 @@ function App() {
         >
           <Landing setSelectedPage={setSelectedPage} />
         </motion.div>
+        
       </div>
       <LineGradient />
+      <div className="w-5/6 mx-auto md:h-full ">
+      <motion.div
+        margin="0 0 -200px 0"
+        amount="all"
+        onViewportEnter={() => setSelectedPage("about")}
+      >
+        <About />
+      </motion.div>
+    </div>
+    <LineGradient />
       <div className="w-5/6 mx-auto md:h-full ">
         <motion.div
           margin="0 0 -200px 0"
@@ -70,16 +82,7 @@ function App() {
           <Projects />
         </motion.div>
       </div>
-      <LineGradient />
-      <div className="w-5/6 mx-auto md:h-full">
-        <motion.div
-          margin="0 0 -200px 0"
-          amount="all"
-          onViewportEnter={() => setSelectedPage("testimonials")}
-        >
-          <Testimonials />
-        </motion.div>
-      </div>
+      
       <LineGradient />
       <div className="w-5/6 mx-auto md:h-full">
         <motion.div

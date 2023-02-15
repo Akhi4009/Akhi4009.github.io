@@ -27,13 +27,18 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
   return (
     <nav className={`${navbarBackground} z-40 w-full fixed top-0 py-6`}>
       <div className="flex items-center justify-between mx-auto w-5/6">
-        <h4 className="font-playfair text-3xl font-bold">AKY</h4>
+        <h4 className="font-playfair text-3xl font-bold">Akhilesh yadav</h4>
 
         {/* DESKTOP NAV */}
         {isDesktop ? (
           <div className="flex justify-between gap-16 font-opensans text-sm font-semibold">
             <Link
               page="Home"
+              selectedPage={selectedPage}
+              setSelectedPage={setSelectedPage}
+            />
+            <Link
+              page="About"
               selectedPage={selectedPage}
               setSelectedPage={setSelectedPage}
             />
@@ -53,11 +58,16 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
               selectedPage={selectedPage}
               setSelectedPage={setSelectedPage}
             />
-            <Link
-              page="Resume"
-              selectedPage={selectedPage}
-              setSelectedPage={setSelectedPage}
-            />
+            <a
+            className="hover:text-yellow"
+            href="https://drive.google.com/file/d/1_s5bmONoauVzalVApfN64_Bmg5UDjbQS/view"
+            target="_blank"
+            rel="noreferrer"
+            
+          
+          >
+            Resume
+          </a>
           </div>
         ) : (
           <button
@@ -86,6 +96,11 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
                 setSelectedPage={setSelectedPage}
               />
               <Link
+                page="About"
+                selectedPage={selectedPage}
+                setSelectedPage={setSelectedPage}
+              />
+              <Link
                 page="Skills"
                 selectedPage={selectedPage}
                 setSelectedPage={setSelectedPage}
@@ -100,11 +115,15 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
                 selectedPage={selectedPage}
                 setSelectedPage={setSelectedPage}
               />
-              <Link
-                page="Resume"
-                selectedPage={selectedPage}
-                setSelectedPage={setSelectedPage}
-              />
+              <a
+            className="hover:text-yellow"
+            href="https://drive.google.com/file/d/1_s5bmONoauVzalVApfN64_Bmg5UDjbQS/view"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Resume
+          </a>
+             
             </div>
           </div>
         )}
