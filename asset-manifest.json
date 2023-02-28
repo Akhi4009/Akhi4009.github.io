@@ -1,14 +1,12 @@
 {
   "files": {
     "main.css": "/static/css/main.c7085016.css",
-    "main.js": "/static/js/main.e54132ff.js",
+    "main.js": "/static/js/main.fb82835f.js",
     "static/media/IternIneqry.png": "/static/media/IternIneqry.13430a0d76b8373b1684.png",
     "static/media/SkinStore.png": "/static/media/SkinStore.51c23e31f1adbde5e6c8.png",
     "static/media/Fitnesshub.png": "/static/media/Fitnesshub.d3ab31a293f384dfb52a.png",
     "static/media/contact-image.jpeg": "/static/media/contact-image.37fcb61b49d6aa5c40d3.jpeg",
     "static/media/AirGarage.png": "/static/media/AirGarage.c92afb65f1a3cf0f305e.png",
-    "static/media/css.png": "/static/media/css.19c8605d6b2861f5fbe0.png",
-    "static/media/javascript.png": "/static/media/javascript.130c0ecd57833da6f75c.png",
     "static/media/React.png": "/static/media/React.ef28a7569ef18dd72579.png",
     "static/media/brush.png": "/static/media/brush.85c9bab5ba2d7dcae1e3.png",
     "static/media/Node.png": "/static/media/Node.e71346fe0fec16ec5f6e.png",
@@ -17,14 +15,16 @@
     "static/media/mongo.png": "/static/media/mongo.c964002ecef4971216d0.png",
     "static/media/vscode.png": "/static/media/vscode.a6b73c6edd0cf8587537.png",
     "static/media/chakra.png": "/static/media/chakra.0719bee98cb0c0b83aeb.png",
+    "static/media/css.png": "/static/media/css.8aaf7833370a6845139c.png",
+    "static/media/javascript.png": "/static/media/javascript.4082b30343222c07d071.png",
     "index.html": "/index.html",
     "static/media/close-icon.svg": "/static/media/close-icon.36a1df96f812b5f4c12f817f90a904c6.svg",
     "static/media/menu-icon.svg": "/static/media/menu-icon.9cbfc3090b4b0aec575128df8ede3633.svg",
     "main.c7085016.css.map": "/static/css/main.c7085016.css.map",
-    "main.e54132ff.js.map": "/static/js/main.e54132ff.js.map"
+    "main.fb82835f.js.map": "/static/js/main.fb82835f.js.map"
   },
   "entrypoints": [
     "static/css/main.c7085016.css",
-    "static/js/main.e54132ff.js"
+    "static/js/main.fb82835f.js"
   ]
 }
