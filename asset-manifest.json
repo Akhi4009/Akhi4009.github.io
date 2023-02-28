@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.18bc9529.css",
-    "main.js": "/static/js/main.ff9bed6e.js",
+    "main.js": "/static/js/main.38271990.js",
     "static/media/IternIneqry.png": "/static/media/IternIneqry.13430a0d76b8373b1684.png",
     "static/media/SkinStore.png": "/static/media/SkinStore.51c23e31f1adbde5e6c8.png",
     "static/media/Fitnesshub.png": "/static/media/Fitnesshub.d3ab31a293f384dfb52a.png",
@@ -15,15 +15,16 @@
     "static/media/typescript.png": "/static/media/typescript.1805dc377569414f323f.png",
     "static/media/github1.png": "/static/media/github1.94475c5b8d478bdf41ce.png",
     "static/media/mongo.png": "/static/media/mongo.c964002ecef4971216d0.png",
+    "static/media/vscode.png": "/static/media/vscode.a6b73c6edd0cf8587537.png",
     "static/media/chakra.png": "/static/media/chakra.0719bee98cb0c0b83aeb.png",
     "index.html": "/index.html",
     "static/media/close-icon.svg": "/static/media/close-icon.36a1df96f812b5f4c12f817f90a904c6.svg",
     "static/media/menu-icon.svg": "/static/media/menu-icon.9cbfc3090b4b0aec575128df8ede3633.svg",
     "main.18bc9529.css.map": "/static/css/main.18bc9529.css.map",
-    "main.ff9bed6e.js.map": "/static/js/main.ff9bed6e.js.map"
+    "main.38271990.js.map": "/static/js/main.38271990.js.map"
   },
   "entrypoints": [
     "static/css/main.18bc9529.css",
-    "static/js/main.ff9bed6e.js"
+    "static/js/main.38271990.js"
   ]
 }
