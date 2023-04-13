@@ -3,12 +3,24 @@ import AirGarage from "../assets/AirGarage.png"
 import SkinStore from "../assets/SkinStore.png"
 import Fitnesshub from "../assets/Fitnesshub.png"
 import IternIneqry from "../assets/IternIneqry.png"
-import linkdin from "../assets/linkedin.png"
-import github from "../assets/github-mark-white.png"
+
+import html from "../assets/html.png"
+import css from "../assets/css.png"
+import javascript from "../assets/javascript.png"
+import react from "../assets/React.png"
+import node from "../assets/Node.png"
+import mongo from "../assets/mongo.png"
+import typescript from "../assets/typescript.png"
+import git from "../assets/git.png"
+import npm from "../assets/npm.png"
+import github from "../assets/github1.png"
+import tailwind from "../assets/tailwind-css.png"
+import bootstrap from "../assets/bootstrap.png"
+import chakra from "../assets/chakra.png"
 
 import LineGradient from "../components/LineGradient";
-import { motion } from "framer-motion";
-import { Button,Card,CardBody,CardFooter,Image,Stack,Heading,Text,Divider,ButtonGroup, Grid }  from "@chakra-ui/react"
+import { motion, transform } from "framer-motion";
+import { Button,Card,CardBody,CardFooter,Image,HStack,Flex,Stack,Heading,Text,Divider,ButtonGroup, Grid }  from "@chakra-ui/react"
 
 
 const project=[
@@ -17,8 +29,26 @@ const project=[
     git:"https://github.com/fahad9988/naughty-wind-121",
     live:"https://air-garage-clone.netlify.app/",
     image:AirGarage,
-    desc:"This is the clone of AirGarage website which is a full service of parking operator.It helps us book parking slots across various places around the United States. This is a collaborative Team Project that we have completed in 4 days.",
-    tech:"HTML, CSS, JavaScript, Bootstrap.",
+    desc:"This is the clone of AirGarage website which is a full service of parking operator.",
+    tech:[
+      {
+       image: html,
+        title:"Html,"
+      },{
+       image: css,
+        title:"Css,"
+      },
+        {
+        image:  javascript,
+        title:"Javascript,"
+        }
+
+          ,{
+          image:  bootstrap,
+            title:"Bootstrap"
+            }
+          ],
+    
     col:"#DC4492"
   },
 
@@ -27,8 +57,30 @@ const project=[
     git:"https://github.com/Akhi4009/fortunate-fog-6612",
     live:"https://build-chi-five.vercel.app/",
     image:SkinStore,
-    desc:"This is the clone of SkinStore website which is a full service of cosmetic products.It helps us to buy cosmetic products across various places around the world. This is a solo Project that I have completed in 4 days.",
-    tech:"HTML, CSS, JavaScript, ReactJS, ChakraUI.",
+    desc:"This is the clone of SkinStore website which is a full service of cosmetic products.",
+    tech:[
+      {
+       image: html,
+        title:"Html,"
+      },{
+       image: css,
+        title:"Css,"
+      },
+        {
+        image:  javascript,
+        title:"Javascript,"
+        }
+
+          ,{
+          image:  react,
+            title:"React,"
+            },
+            {
+              image:  chakra,
+                title:"Chakraui"
+                }
+          ],
+    
     col:"#2CBCE9"
   },
   {
@@ -36,8 +88,27 @@ const project=[
     git:"https://github.com/srinetanuj/FitnessHub",
     live:"https://projectfitnesshub.netlify.app/",
     image:Fitnesshub,
-    desc:"Fitnesshub is the most accurate, comprehensive nutrition tracking app. It is clone website of cronometer.com.This is a collaborative Team Project that we have completed in 4 days.",
-    tech:"HTML, CSS, JavaScript, ReactJS, ChakraUI.",
+    desc:"Fitnesshub is the most accurate, comprehensive nutrition tracking app.",
+  
+      tech:[
+        {
+         image: html,
+          title:"Html,"
+        },{
+         image: css,
+          title:"Css,"
+        },
+          {
+          image:  javascript,
+          title:"Javascript,"
+          }
+  
+            ,{
+            image:  react,
+              title:"React"
+              }
+            ],
+    
     col:"#FDCC49"
   },
 
@@ -46,8 +117,26 @@ const project=[
     git:"https://github.com/Akhi4009/scrawny-meat-2282",
     live:"https://polite-platypus-d70ea6.netlify.app/",
     image:IternIneqry,
-    desc:"This is a clone of website Interntheory.com. It provides oppertunity for students to get a good internship.This is a solo Project that I have completed in 4 days.",
-    tech:"HTML, CSS, JavaScript, Bootstrap.",
+    desc:"This is a clone of website Interntheory.com. It provides oppertunity for students to get a good internship.",
+    tech:[
+      {
+       image: html,
+        title:"Html,"
+      },{
+       image: css,
+        title:"Css,"
+      },
+        {
+        image:  javascript,
+        title:"Javascript,"
+        }
+
+          ,{
+          image:  bootstrap,
+            title:"Bootstrap"
+            }
+          ],
+    
     col:"#DC4492"
   }
 ]
@@ -106,7 +195,29 @@ const Projects = () => {
       <Text>
        {ele.desc}
       </Text>
-      <Text className=" text-sm font-playfair"><span className="text-black text-sm font-playfair">Tech Used : </span> {ele.tech}</Text>
+<HStack>
+{ele.tech.map(ele=>(
+
+  <Image w="10%" src={ele.image}/>
+
+  
+ 
+))}
+</HStack>
+<Flex gap={2} alignItems="center">
+<Heading as="h4" size="sm">Tech Stacks:</Heading>
+<HStack ga={0}>
+{ele.tech.map(ele=>(
+
+  <Text color="white" fontWeight="bold">{ele.title}</Text>
+
+  
+ 
+))}
+</HStack>
+</Flex>
+
+
      
       
     </Stack>

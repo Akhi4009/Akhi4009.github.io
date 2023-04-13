@@ -9,7 +9,7 @@ const About= ({ setSelectedPage }) => {
   const isAboveLarge = useMediaQuery("(min-width: 1060px)");
   return (
     <section
-      id="about"
+      id="aboutme"
       className="md:flex md:justify-between md:items-center gap-16 md:h-full py-10"
     >
       {/* IMAGE SECTION */}
@@ -25,17 +25,17 @@ const About= ({ setSelectedPage }) => {
         visible: { opacity: 1, x: 0 },
       }}>
         {isAboveLarge ? (
-          <div>
-            <img
+          <div >
+            <img 
               alt="profile"
-              className="hover:filter hover:saturate-200 transition duration-500 z-10 w-full max-w-[400px] md:max-w-[600px]"
+              className="hover:filter hover:saturate-200 transition duration-500 z-10 w-full max-w-[300px] md:max-w-[400px] "
               src="https://avatars.githubusercontent.com/u/103496723?v=4"
             />
           </div>
         ) : (
           <img
             alt="profile"
-            className="z-10 w-full max-w-[400px] md:max-w-[600px]"
+            className="z-10 w-full max-w-[300px] md:max-w-[400px]"
             src="https://avatars.githubusercontent.com/u/103496723?v=4"
           />
         )}

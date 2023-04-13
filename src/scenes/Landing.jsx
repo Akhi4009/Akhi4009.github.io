@@ -27,7 +27,7 @@ const Landing = ({ setSelectedPage }) => {
           }}
         >
           <p className="text-6xl font-playfair  text-center md:text-start text-yellow">
-        <p className="text-3xl text-blue" p={2}> Hello, I'm a</p> 
+        <p className="text-3xl text-blue" p={2}> Hello, I'm Akhilesh yadav</p> 
             
               Full Stack Web Developer
            

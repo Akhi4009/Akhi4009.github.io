@@ -1,5 +1,5 @@
 import LineGradient from "../components/LineGradient";
-import { Flex,Image,Text,Grid,GridItem } from "@chakra-ui/react";
+import { Image,Grid,GridItem, VStack } from "@chakra-ui/react";
 
 import { motion } from "framer-motion";
 import html from "../assets/html.png"
@@ -8,36 +8,101 @@ import javascript from "../assets/javascript.png"
 import React from "../assets/React.png"
 import Node from "../assets/Node.png"
 import mongo from "../assets/mongo.png"
+import typescript from "../assets/typescript.png"
+import git from "../assets/git.png"
+import npm from "../assets/npm.png"
+import github from "../assets/github1.png"
+import tailwind from "../assets/tailwind-css.png"
+import bootstrap from "../assets/bootstrap.png"
+import chakra from "../assets/chakra.png"
+import vscode from "../assets/vscode.png"
+import { Box,  keyframes } from '@chakra-ui/react';
+
 
 
 const skills=[
   {
-    Title:"HTML",
-    image:html
+   
+    image:html,
+    title:"html"
 
   },
   {
-    Title:"CSS",
-    image:css
+    
+    image:css,
+    title:"css"
 },
 {
-  Title:"JavaScript",
-  image:javascript
+ 
+  image:javascript,
+  title:"javascript"
 },
 {
-  Title:"React",
-  image:React
-},
-{
-  Title:"Node",
-  image:Node
-},
-{
-  Title:"MongoDB",
-  image:mongo
-}
-]
 
+  image:React,
+  title:"react"
+},
+{
+
+  image:Node,
+  title:"nodejs"
+},
+{
+
+  image:mongo,
+  title:"mongodb"
+},
+{
+
+  image:typescript,
+  title:"typescript"
+},
+{
+
+  image:bootstrap,
+  title:"bootstrap"
+},
+{
+
+  image:chakra,
+  title:"chakraui"
+},
+{
+
+  image:tailwind,
+  title:"tailwind"
+},
+{
+
+  image:git,
+  title:"git"
+},
+{
+
+  image:github,
+  title:"github"
+},
+{
+
+  image:npm,
+  title:"npm"
+},
+{
+
+  image:vscode,
+  title:"vscode"
+},
+
+]
+// const animationKeyframes = keyframes`
+//   0% { transform: scale(1) rotate(0); border-radius: 20%; }
+//   25% { transform: scale(1.70) rotate(0); border-radius: 20%; }
+//   50% { transform: scale(1.70) rotate(360deg); border-radius: 50%; }
+//   75% { transform: scale(1) rotate(360deg); border-radius: 50%; }
+//   100% { transform: scale(1) rotate(0); border-radius: 20%; }
+// `;
+
+// const animation = `${animationKeyframes} 10s ease-in-out infinite`;
 
 const MySkills = () => {
  
@@ -61,16 +126,17 @@ const MySkills = () => {
           <p className="font-playfair font-semibold text-4xl mb-5">
             MY <span className="text-red">SKILLS</span>
           </p>
-          <LineGradient width="w-1/3" />
+          <LineGradient width="w-1/3 mb-10" />
          
         </motion.div>
         </div>
-        <Grid gridTemplateColumns={{base:"repeat(3,1fr)"}} >
+        <Grid gridTemplateColumns={{base:"repeat(3,1fr)",md:"repeat(5,1fr)"}} gap={10}>
         {skills.map(ele=>(
           
-          <GridItem >
+          <GridItem key={ele.image} >
+          <VStack boxShadow='sm' p='2' rounded='md' bg='white'>
           <motion.div
-          className="w-1/3 mt-10"
+          className="w-1/3"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.5 }}
@@ -80,12 +146,13 @@ const MySkills = () => {
             visible: { opacity: 1, y: 0 },
           }}
         >
-         <Flex direction="column" gap={5} alignItems="center" >
-         <Text>{ele.Title}</Text>
-         <Image src={ele.image} alt={ele.Title}/>
-         </Flex>
+      
+        
+            <Image src={ele.image} alt={ele.title} />
+         </motion.div>
+         <text className="text-red">{ele.title}</text>
+          </VStack>
           
-        </motion.div>
         </GridItem>
         
         ))}

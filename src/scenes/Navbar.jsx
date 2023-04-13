@@ -4,6 +4,7 @@ import useMediaQuery from "../hooks/useMediaQuery";
 import open from "../assets/menu-icon.svg"
 import close from "../assets/close-icon.svg"
 
+
 const Link = ({ page, selectedPage, setSelectedPage }) => {
   const lowerCasePage = page.toLowerCase();
   return (
@@ -18,6 +19,10 @@ const Link = ({ page, selectedPage, setSelectedPage }) => {
     </AnchorLink>
   );
 };
+const OpenResume = ()=>{
+  window.open("https://drive.google.com/file/d/1_s5bmONoauVzalVApfN64_Bmg5UDjbQS/view?usp=share_link")
+}
+
 
 const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
   const [isMenuToggled, setIsMenuToggled] = useState(false);
@@ -27,7 +32,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
   return (
     <nav className={`${navbarBackground} z-40 w-full fixed top-0 py-6`}>
       <div className="flex items-center justify-between mx-auto w-5/6">
-        <h4 className="font-playfair text-3xl font-bold">Akhilesh yadav</h4>
+        <h4 className="font-playfair text-3xl font-bold">AKY</h4>
 
         {/* DESKTOP NAV */}
         {isDesktop ? (
@@ -38,7 +43,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
               setSelectedPage={setSelectedPage}
             />
             <Link
-              page="About"
+              page="AboutMe"
               selectedPage={selectedPage}
               setSelectedPage={setSelectedPage}
             />
@@ -60,10 +65,9 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
             />
             <a
             className="hover:text-yellow"
-            href="https://drive.google.com/file/d/1_s5bmONoauVzalVApfN64_Bmg5UDjbQS/view"
-            target="_blank"
-            rel="noreferrer"
+            href='https://drive.google.com/uc?id=1_s5bmONoauVzalVApfN64_Bmg5UDjbQS&export=download' 
             
+            onClick={OpenResume}
           
           >
             Resume
@@ -96,7 +100,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
                 setSelectedPage={setSelectedPage}
               />
               <Link
-                page="About"
+                page="AboutME"
                 selectedPage={selectedPage}
                 setSelectedPage={setSelectedPage}
               />
@@ -117,9 +121,11 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
               />
               <a
             className="hover:text-yellow"
-            href="https://drive.google.com/file/d/1_s5bmONoauVzalVApfN64_Bmg5UDjbQS/view"
+            href='https://drive.google.com/uc?id=1_s5bmONoauVzalVApfN64_Bmg5UDjbQS&export=download' 
+
             target="_blank"
-            rel="noreferrer"
+            onClick={OpenResume}
+           
           >
             Resume
           </a>

@@ -7,9 +7,10 @@ import Projects from "./scenes/Projects";
 import Contact from "./scenes/Contact";
 import Footer from "./scenes/Footer";
 import About from "./scenes/About";
+import Githubdata from "./scenes/Githubdata";
 import useMediaQuery from "./hooks/useMediaQuery";
 import { useEffect, useState } from "react";
-import Testimonials from "./scenes/Testimonials";
+
 import { motion } from "framer-motion";
 
 function App() {
@@ -57,7 +58,7 @@ function App() {
       <motion.div
         margin="0 0 -200px 0"
         amount="all"
-        onViewportEnter={() => setSelectedPage("about")}
+        onViewportEnter={() => setSelectedPage("aboutme")}
       >
         <About />
       </motion.div>
@@ -80,6 +81,16 @@ function App() {
           onViewportEnter={() => setSelectedPage("projects")}
         >
           <Projects />
+        </motion.div>
+      </div>
+      <LineGradient />
+      <div className="w-5/6 mx-auto md:h-full">
+        <motion.div
+          margin="0 0 -200px 0"
+          amount="all"
+          onViewportEnter={() => setSelectedPage("github")}
+        >
+          <Githubdata />
         </motion.div>
       </div>
       
