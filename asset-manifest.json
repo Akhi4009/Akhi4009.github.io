@@ -1,8 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.c7085016.css",
-    "main.js": "/static/js/main.f1e6bf8e.js",
-    "static/media/SkinStore.png": "/static/media/SkinStore.51c23e31f1adbde5e6c8.png",
+    "main.js": "/static/js/main.5524b531.js",
     "static/media/Fitnesshub.png": "/static/media/Fitnesshub.d3ab31a293f384dfb52a.png",
     "static/media/contact-image.jpeg": "/static/media/contact-image.37fcb61b49d6aa5c40d3.jpeg",
     "static/media/AirGarage.png": "/static/media/AirGarage.c92afb65f1a3cf0f305e.png",
@@ -22,10 +21,10 @@
     "static/media/close-icon.svg": "/static/media/close-icon.432ea5a6e3d2320342c0044e59de2d15.svg",
     "static/media/menu-icon.svg": "/static/media/menu-icon.e574f36b7d7842f3b97bc3c0c5f39ccc.svg",
     "main.c7085016.css.map": "/static/css/main.c7085016.css.map",
-    "main.f1e6bf8e.js.map": "/static/js/main.f1e6bf8e.js.map"
+    "main.5524b531.js.map": "/static/js/main.5524b531.js.map"
   },
   "entrypoints": [
     "static/css/main.c7085016.css",
-    "static/js/main.f1e6bf8e.js"
+    "static/js/main.5524b531.js"
   ]
 }
